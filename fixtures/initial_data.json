@@ -1,0 +1,26 @@
+[
+    {
+        "pk": 1,
+        "model": "sites.site",
+        "fields": {
+            "domain": "localhost",
+            "name": "DjangoCon [local]"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "sites.site",
+        "fields": {
+            "domain": "lc911.o1.gondor.io",
+            "name": "DjangoCon [dev]"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "sites.site",
+        "fields": {
+            "domain": "djangocon.us",
+            "name": "DjangoCon"
+        }
+    }
+]
