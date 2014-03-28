@@ -1,0 +1,60 @@
+html {
+	background: url("../images/test6.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+		}
+
+
+body {
+	font-style: normal;
+	font-weight: 400;
+	font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
+	background-color: transparent;
+	color: #ee1a67;
+	text-align: center;
+	}
+
+h1 {font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
+ 	font-weight: 700;
+ 	font-size: 72px;
+}
+
+h2 {
+	font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+h3 {font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 700;}
+	
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.panel {
+			background-color: rgba(255, 255, 255, 0.5);
+			border-radius: 0px;
+		}
+
+hr {
+	border-top: 1px dashed #fff; 
+}	
+
+.logo {
+	background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+
+
+.top-buffer { margin-top:25px; }
+.bottom-buffer { margin-bottom:50px; }
+
+@media (max-width: 767px) {
+	h1 {font-size: 48px;}
+}
