@@ -12,8 +12,9 @@ body {
 	font-weight: 400;
 	font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
 	background-color: transparent;
-	color: #00908b;
+	color: #00b898;
 	text-align: center;
+	border: 15px solid #00b898;
 	}
 
 h1 {font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
