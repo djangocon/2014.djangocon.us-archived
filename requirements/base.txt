@@ -11,7 +11,8 @@ django-redis-cache==0.9.7
 metron==0.1 # 0.2.dev3
 pinax-utils==1.0b1.dev3
 South==0.8.4
--e git://github.com/pyohio/symposion.git#egg=symposion
+# pin the version based on the version used for PyOhio 2014
+-e git://github.com/pyohio/symposion.git@6b9fb3a49dedc1ac9a603e544a95ec1609d46204#egg=symposion
 
 # Other Python packages
 gondor==1.2.4
