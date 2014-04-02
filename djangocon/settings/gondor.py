@@ -5,7 +5,7 @@ from .base import *
 
 DEBUG = {"dev": True}.get(os.environ["GONDOR_INSTANCE"], False)
 
-ALLOWED_HOSTS = ['changeme.gondor.co', 'djangocon.us', 'www.djangocon.us']
+ALLOWED_HOSTS = ['fi290.gondor.co', 'djangocon.us', 'www.djangocon.us']
 
 if "GONDOR_DATABASE_URL" in os.environ:
     urlparse.uses_netloc.append("postgres")

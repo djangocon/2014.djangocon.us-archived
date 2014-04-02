@@ -11,7 +11,7 @@
         "pk": 2,
         "model": "sites.site",
         "fields": {
-            "domain": "lc911.o1.gondor.io",
+            "domain": "fi290.gondor.co",
             "name": "DjangoCon [dev]"
         }
     },
