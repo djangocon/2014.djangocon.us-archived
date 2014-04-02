@@ -56,7 +56,28 @@ Run local server::
 For Gondor
 --------------
 
-* TODO
+Deploying to Gondor is relatively straightforward. You will need to setup a
+Gondor configuration file, if you have not already done so::
+
+    vi ~/.gondor
+
+Add the following content::
+
+    [auth]
+    username = gondor-username
+    key = gondor-user-key
+
+Change the permissions on the file::
+
+    chmod 600 ~/.gondor
+
+To deploy the develop branch to the staging instance::
+
+    gondor deploy dev develop
+
+To deploy the master branch to the production instance::
+
+    gondor deploy primary master
 
 To run tests
 ------------
