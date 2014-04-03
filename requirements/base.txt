@@ -12,10 +12,10 @@ metron==0.1 # 0.2.dev3
 pinax-utils==1.0b1.dev3
 South==0.8.4
 # pin the version based on the version used for PyOhio 2014
--e git://github.com/pyohio/symposion.git@6b9fb3a49dedc1ac9a603e544a95ec1609d46204#egg=symposion
+git+git://github.com/pyohio/symposion.git@6b9fb3a49dedc1ac9a603e544a95ec1609d46204#egg=symposion
 
 # Other Python packages
-gondor==1.2.4
+gondor==1.2.5
 gunicorn==0.17.2
 hiredis==0.1.1
 Pillow==2.3.0
