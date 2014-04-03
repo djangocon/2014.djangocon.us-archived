@@ -1,5 +1,5 @@
 html {
-	background: url("../images/test7.jpg") no-repeat center center fixed; 
+	background: url("../images/portland.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -12,9 +12,9 @@ body {
 	font-weight: 400;
 	font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
 	background-color: transparent;
-	color: #00b898;
+	color: #005b7f;
 	text-align: center;
-	border: 15px solid #00b898;
+	border: 15px solid #fff;
 	}
 
 h1 {font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
@@ -58,4 +58,5 @@ hr {
 
 @media (max-width: 767px) {
 	h1 {font-size: 48px;}
+	.logo {margin-bottom:15px;}
 }
