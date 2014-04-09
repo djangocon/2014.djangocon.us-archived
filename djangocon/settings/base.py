@@ -156,6 +156,7 @@ INSTALLED_APPS = [
     "sitetree",
     "account",
     "model_utils",
+    "comps",
 
     # symposion
     "symposion",
@@ -227,3 +228,5 @@ THEME_CONTACT_EMAIL = 'support@djangocon.org'
 SOUTH_MIGRATION_MODULES = {
     'proposals': 'djangocon.proposals.migrations',
 }
+
+COMPS_DIR = os.path.join(PACKAGE_ROOT, "templates/comps")

@@ -26,9 +26,9 @@ urlpatterns += patterns("",
     #     TemplateView.as_view(template_name="registration.html"),
     #     name="registration"),
 
-    # url(r"^account/signup/$", symposion.views.SignupView.as_view(), name="account_signup"),
-    # url(r"^account/login/$", symposion.views.LoginView.as_view(), name="account_login"),
-    # url(r"^account/", include("account.urls")),
+    url(r"^account/signup/$", symposion.views.SignupView.as_view(), name="account_signup"),
+    url(r"^account/login/$", symposion.views.LoginView.as_view(), name="account_login"),
+    url(r"^account/", include("account.urls")),
 
     # url(r"^schedule/json/$", djangocon.views.schedule_json, name="schedule_json"),
 
