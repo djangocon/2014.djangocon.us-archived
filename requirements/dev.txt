@@ -2,8 +2,6 @@
 
 -r base.txt
 
-django-comps==0.3.0
-
 django-debug-toolbar==1.0
 # Required by django-debug-toolbar
 sqlparse==0.1.10
