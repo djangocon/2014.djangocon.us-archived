@@ -1,4 +1,4 @@
-{% extends "site_base.html" %}
+{% extends "comps/site_base.html" %}
 
 {% load i18n %}
 {% load bootstrap_tags %}
@@ -11,16 +11,685 @@
 
 {% block body %}
 
-    {% include "_page_title.html" with page_title="Conference Schedule" %}
+<div class="row headline">
+  <div class="col-xs-12 col-sm-12">
+    <h1>Conference Schedule</h2>
+  </div>
+</div>
 
-    {% box "schedule_top" %}
-    {% for section in sections %}
+
+
+
+
+
+
+
+<div id="content_schedule_top" class="content-box ">
+
+
+</div>
+
+
     <div class="row">
-        {% for timetable in section.days %}
-                {% include "schedule/_grid.html" %}
-        {% endfor %}
-    </div>
-    {% endfor %}
 
-    {% box "schedule_bottom" %}
+
+
+
+
+<div class="col-md-6">
+    <table class="calendar table">
+        <thead>
+            <tr>
+                <th>Saturday, July 26th</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr class="odd">
+                <td>
+                    <p class="start-time">08:45 AM</p>
+
+
+
+                                <p>Registration</p>
+
+
+
+                      <p class="end-time">
+                          until 9 a.m.
+
+                            <span class="room">in
+
+                                Cartoon 1,
+
+                                Cartoon 2,
+
+                                Barbie Tootle,
+
+                                Hays Cape
+
+                            </span>
+
+                     </p>
+
+
+
+
+                                <p>Young Coders Check-in</p>
+<p><small><i>If you are not at least in line by 9:10, we reserve the right to give up your child's seat.</i></small></p>
+
+
+
+                      <p class="end-time">
+                          until 9:30 a.m.
+
+                     </p>
+
+
+                </td>
+            </tr>
+
+            <tr class="even">
+                <td>
+                    <p class="start-time">09:00 AM</p>
+
+
+
+                                <p>Opening Remarks</p>
+
+
+
+                      <p class="end-time">
+                          until 9:15 a.m.
+
+                            <span class="room">in
+
+                                Cartoon 1,
+
+                                Cartoon 2,
+
+                                Barbie Tootle,
+
+                                Hays Cape
+
+                            </span>
+
+                     </p>
+
+
+                </td>
+            </tr>
+
+            <tr class="odd">
+                <td>
+                    <p class="start-time">09:15 AM</p>
+
+
+
+                                <p>Keynote</p>
+
+
+
+                      <p class="end-time">
+                          until 10:30 a.m.
+
+                            <span class="room">in
+
+                                Cartoon 1,
+
+                                Cartoon 2,
+
+                                Barbie Tootle,
+
+                                Hays Cape
+
+                            </span>
+
+                     </p>
+
+
+                </td>
+            </tr>
+
+            <tr class="even">
+                <td>
+                    <p class="start-time">09:30 AM</p>
+
+
+
+                                <p><span class="title"><a href="http://pyohio.org/young-coders/">PyKids Tutorial</a></span>
+<span class="speaker">Katie Cunningham</span></p>
+
+
+
+                      <p class="end-time">
+                          until 12:30 p.m.
+
+                            <span class="room">in
+
+                                Tanya Rutner
+
+                            </span>
+
+                     </p>
+
+
+                </td>
+            </tr>
+
+            <tr class="odd">
+                <td>
+                    <p class="start-time">10:30 AM</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </td>
+            </tr>
+
+            <tr class="even">
+                <td>
+                    <p class="start-time">11:30 AM</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </td>
+            </tr>
+
+            <tr class="odd">
+                <td>
+                    <p class="start-time">12:30 PM</p>
+
+
+
+                                <p>Lunch</p>
+
+
+
+                      <p class="end-time">
+                          until 1:30 a.m.
+
+                            <span class="room">in
+
+                                Tanya Rutner
+
+                            </span>
+
+                     </p>
+
+
+
+
+                                <p>Lunch</p>
+
+
+
+                      <p class="end-time">
+                          until 2 a.m.
+
+                            <span class="room">in
+
+                                Cartoon 1,
+
+                                Cartoon 2,
+
+                                Barbie Tootle,
+
+                                Hays Cape
+
+                            </span>
+
+                     </p>
+
+
+                </td>
+            </tr>
+
+            <tr class="even">
+                <td>
+                    <p class="start-time">01:30 PM</p>
+
+
+
+
+
+
+
+                      <p class="end-time">
+                          until 2 p.m.
+
+                            <span class="room">in
+
+                                Cartoon 1,
+
+                                Cartoon 2,
+
+                                Barbie Tootle,
+
+                                Hays Cape
+
+                            </span>
+
+                     </p>
+
+
+
+
+                                <p><span class="title"><a href="http://pyohio.org/young-coders/">PyKids Tutorial (cont.)</a></span>
+<span class="speaker">Katie Cunningham</span></p>
+
+
+
+                      <p class="end-time">
+                          until 4:30 p.m.
+
+                            <span class="room">in
+
+                                Tanya Rutner
+
+                            </span>
+
+                     </p>
+
+
+                </td>
+            </tr>
+
+            <tr class="odd">
+                <td>
+                    <p class="start-time">02:00 PM</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </td>
+            </tr>
+
+            <tr class="even">
+                <td>
+                    <p class="start-time">03:00 PM</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </td>
+            </tr>
+
+            <tr class="odd">
+                <td>
+                    <p class="start-time">04:00 PM</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </td>
+            </tr>
+
+            <tr class="even">
+                <td>
+                    <p class="start-time">04:30 PM</p>
+
+
+
+
+
+
+
+                </td>
+            </tr>
+
+            <tr class="odd">
+                <td>
+                    <p class="start-time">05:00 PM</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </td>
+            </tr>
+
+            <tr class="even">
+                <td>
+                    <p class="start-time">06:00 PM</p>
+
+
+
+                                <p>Saturday Lightning Talks</p>
+
+
+
+                      <p class="end-time">
+                          until 7 p.m.
+
+                            <span class="room">in
+
+                                Cartoon 1,
+
+                                Cartoon 2,
+
+                                Barbie Tootle,
+
+                                Hays Cape
+
+                            </span>
+
+                     </p>
+
+
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+<div id="content_schedule_day_26" class="content-box ">
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="col-md-6">
+    <table class="calendar table">
+        <thead>
+            <tr>
+                <th>Sunday, July 27th</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr class="odd">
+                <td>
+                    <p class="start-time">12:00 PM</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </td>
+            </tr>
+
+            <tr class="even">
+                <td>
+                    <p class="start-time">01:00 PM</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </td>
+            </tr>
+
+            <tr class="odd">
+                <td>
+                    <p class="start-time">02:00 PM</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </td>
+            </tr>
+
+            <tr class="even">
+                <td>
+                    <p class="start-time">03:00 PM</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </td>
+            </tr>
+
+            <tr class="odd">
+                <td>
+                    <p class="start-time">04:00 PM</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </td>
+            </tr>
+
+            <tr class="even">
+                <td>
+                    <p class="start-time">05:00 PM</p>
+
+
+
+                                <p>Sunday Lightning Talks</p>
+
+
+
+                      <p class="end-time">
+                          until 6 p.m.
+
+                            <span class="room">in
+
+                                Cartoon 1,
+
+                                Cartoon 2,
+
+                                Barbie Tootle,
+
+                                Hays Cape,
+
+                                Tanya Rutner
+
+                            </span>
+
+                     </p>
+
+
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+<div id="content_schedule_day_27" class="content-box ">
+
+    <h4>Sunday Open Space Presentations</h4>
+<ul>
+<li>12:00PM <a href="http://pyohio.org/schedule/presentation/35/">Science, Python, and You</a> (Jeffrey Spies, Rosa Ailabouni Room)</li>
+</ul>
+</div>
+
 {% endblock body %}
