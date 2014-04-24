@@ -1,5 +1,5 @@
 html {
-	background: url("../images/portland.jpg") no-repeat center center fixed; 
+	background: url("../images/skyline.jpg") no-repeat center 10% fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -12,7 +12,7 @@ body {
 	font-weight: 400;
 	font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
 	background-color: transparent;
-	color: #005b7f;
+	color: #63da81;
 	text-align: center;
 	border: 15px solid #fff;
 	}
