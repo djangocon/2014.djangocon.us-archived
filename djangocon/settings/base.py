@@ -145,6 +145,7 @@ INSTALLED_APPS = [
     "bootstrapform",
 
     # external
+    "biblion",
     "south",
     "mailer",
     "timezones",
