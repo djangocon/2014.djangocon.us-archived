@@ -1,13 +1,167 @@
 {% extends "site_base.html" %}
 
-{% load i18n %}
 {% load boxes_tags %}
+{% load i18n %}
+{% load sponsorship_tags %}
+{% load staticfiles %}
+{% load thumbnail %}
+{% load biblion_tags %}
 
 {% block head_title %}{% trans "Welcome" %}{% endblock %}
 
 {% block body_class %}home{% endblock %}
 
-{% block body %}
-    {% box "homepage" %}
-    &nbsp;
-{% endblock %}
+{% block body_outer %}
+
+<!-- headline -->
+      <div class="main-header" style="margin-top:70px;">
+        <div class="col-md-7 col-md-offset-5 header-message">
+        <h1 class="padded-multi-line">We're returning to Portland!<br>
+        Aug. 30 - Sept. 5, 2014</h1>
+        </div>
+        </div> 
+<!-- /headline -->         
+     
+<!-- call to action -->
+      <div class="row cta-section">
+      <div class="container">
+
+        <div class="col-xs-12 col-sm-4 col-md-4 cta">
+        <a href="#">
+          <svg width="150" height="150">
+                <image xlink:href="{% static "images/proposal-icon.svg" %}" src="{% static "images/proposal-icon.png" %}" width="150" height="150"/>
+              </svg>
+            <div class="cta-content">
+            Call for Proposals
+            </div>
+            </a>
+        </div>
+        
+
+        <div class="col-xs-12 col-sm-4 col-md-4 cta">
+        <a href="#">
+          <svg width="150" height="150">
+                <image xlink:href="{% static "images/sponsor-icon.svg" %}" src="{% static "images/sponsor-icon.png" %}" width="150" height="150"/>
+              </svg>
+            <div class="cta-content">
+            Become a Sponsor
+            </div>
+            </a>
+        </div>
+       
+ 
+        <div class="col-xs-12 col-sm-4 col-md-4 cta">
+        <a href="#">
+          <svg width="150" height="150">
+                <image xlink:href="{% static "images/register-icon.svg" %}" src="{% static "images/register-icon.png" %}" width="150" height="150"/>
+              </svg>
+            <div class="cta-content">
+            Registration Info
+            </div>
+        </div>
+        </a>
+      </div>
+      </div>
+<!-- /call to action -->
+
+<!-- sponsors -->
+      <div class="row sponsors-section">
+       <div class="container">
+
+          <h1>SPONSORS</h1>
+          </div>
+
+
+          <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    {% sponsors as all_sponsors %}
+    <!-- Indicators -->
+      <ol class="carousel-indicators">
+    {% for sponsor in all_sponsors %}
+	  {% if forloop.counter0|divisibleby:"6" %}
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      {% endif %}
+    {% endfor %}
+
+       <li data-target="#myCarousel" data-slide-to="1"></li>
+
+   
+      </ol>
+
+<div class="carousel-inner">
+
+      {% sponsors as all_sponsors %}
+        {# sponsors with levels, 6 per each slide #}
+
+	        <div class="item active">
+	          <div class="container">
+	            <div class="row sponsors">
+
+			    {% for sponsor in all_sponsors %}
+				    {% if forloop.first or forloop.counter0|divisibleby:"6" %}
+
+	            </div>
+	          </div>
+            </div>
+
+	        <div class="item">
+	          <div class="container">
+	            <div class="row sponsors">
+
+		    	    {% endif %}
+		    	{% if sponsor.website_logo %}
+
+		        <div class="col-md-2 col-sm-2 col-xs-6">
+		          <div class="sponsor-logo">
+
+			          {% if sponsor.external_url %}
+			            <a href="{{ sponsor.external_url }}">
+			          {% endif %}
+			            <img src="{% thumbnail sponsor.website_logo "132x80" %}"alt="{{ sponsor.name }}" />
+			          {% if sponsor.external_url %}</a>{% endif %}
+
+		          </div>
+		          <div class="level-label">{{ sponsor.level }}</div>            
+		        </div>
+
+				    {% endif %}
+			    {% endfor %}
+
+		        </div>
+		      </div>
+		    </div>
+
+</div>  <!-- /end carousel inner -->     
+
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+ </div>
+<!-- /sponsors -->
+      
+
+    <div class="row news-section">
+    <div class="container">
+        <div class=" news col-md-12 col-centered">
+          <h1>LATEST NEWS</h1>
+          <ul>
+          {% latest_blog_posts as posts %}
+          {% for post in posts|slice:"3" %}
+	          <div class="col-md-4 col-sm-12"><li>
+	            <a href="{{ post.get_absolute_url }}"><h2>{{ post.title }}</h2>
+	            {{ post.teaser_html|safe }}
+	            </a>
+	          </li></div>
+         
+          {% empty %}
+                <p>No announcements have been published.</p>
+          {% endfor %}
+          
+          </ul>
+      </div>
+    </div>
+    </div>
+
+{% endblock body_outer %}
