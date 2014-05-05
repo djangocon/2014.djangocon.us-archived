@@ -157,6 +157,7 @@ INSTALLED_APPS = [
     "sitetree",
     "account",
     "model_utils",
+    "biblion",
     "comps",
 
     # symposion

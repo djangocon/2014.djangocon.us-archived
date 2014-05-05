@@ -5,7 +5,6 @@
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
 <link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,400italic,600italic' rel='stylesheet' type='text/css'>
   <meta charset="UTF-8">
   <title>{% block head_title_base %}{% if SITE_NAME %}{{ SITE_NAME }} | {% endif %}{% block head_title %}{% endblock head_title %}{% endblock head_title_base %}</title>
   {% block viewport %}
@@ -56,7 +55,7 @@
             <span class="icon-bar"></span>
           </button>
           {% block site_brand %}<a class="navbar-brand" href="{% url 'home' %}">
-          <img width="180" height="" class="img-responsive" src="{% static 'images/logo.png' %}"></a>
+          <img width="114" height="" class="img-responsive" src="{% static 'images/logo.png' %}"></a>
           {% endblock site_brand %}
         </div>
         <div class="navbar-collapse collapse">
@@ -66,6 +65,7 @@
           {% block account_bar %}
             {% include "_account_bar.html" %}
           {% endblock account_bar %}
+
         </div>
         <!--/.nav-collapse -->
         {% endblock topbar %}
@@ -77,14 +77,14 @@
       {% include "_messages.html" %}
 
       {% block body_outer %}
-      <div class="row">
-        <div class="col-xs-12 col-sm-12">
+
           {% block body %}{% endblock body %}
-        </div>
-      </div>
+
       {% endblock body_outer %}
       
     {% endblock body_base %}
+
+      </div><!--end of container-->
 
     {% block footer_base %}
     <div class="row" id="footer">
@@ -100,7 +100,7 @@
     </div>
     {% endblock footer_base %}
 
-  </div><!--end of container-->
+
 
   {% block script_base %}
   <!-- Include all compiled plugins (below), or include individual files as needed -->

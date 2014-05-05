@@ -1,12 +1,17 @@
 {% extends "comps/site_base.html" %}
 {% load staticfiles %}
 
+
+{% block site_brand %}<a class="navbar-brand" href="{% url 'home' %}">
+          <img width="180" height="" class="img-responsive" src="{% static 'images/logo.png' %}"></a>
+          {% endblock site_brand %}
+
 {% block body_id %}my-page{% endblock body_id %}
       {% block body_outer %}
 
 <!-- headline -->
       <div class="main-header" style="margin-top:70px;">
-        <div class="col-md-7 col-md-offset-5 header-message">
+        <div class="col-md-7 pull-right header-message">
         <h1 class="padded-multi-line">We're returning to Portland!<br>
         Aug. 30 - Sept. 5, 2014</h1>
         </div>
@@ -19,8 +24,8 @@
 
         <div class="col-xs-12 col-sm-4 col-md-4 cta">
         <a href="#">
-          <svg width="150" height="150">
-                <image xlink:href="{% static "images/proposal-icon.svg" %}" src="{% static "images/proposal-icon.png" %}" width="150" height="150"/>
+          <svg width="100" height="100">
+                <image xlink:href="{% static "images/proposal-icon.svg" %}" src="{% static "images/proposal-icon.png" %}" width="100" height="100"/>
               </svg>
             <div class="cta-content">
             Call for Proposals
@@ -31,8 +36,8 @@
 
         <div class="col-xs-12 col-sm-4 col-md-4 cta">
         <a href="#">
-          <svg width="150" height="150">
-                <image xlink:href="{% static "images/sponsor-icon.svg" %}" src="{% static "images/sponsor-icon.png" %}" width="150" height="150"/>
+          <svg width="100" height="100">
+                <image xlink:href="{% static "images/sponsor-icon.svg" %}" src="{% static "images/sponsor-icon.png" %}" width="100" height="100"/>
               </svg>
             <div class="cta-content">
             Become a Sponsor
@@ -43,8 +48,8 @@
  
         <div class="col-xs-12 col-sm-4 col-md-4 cta">
         <a href="#">
-          <svg width="150" height="150">
-                <image xlink:href="{% static "images/register-icon.svg" %}" src="{% static "images/register-icon.png" %}" width="150" height="150"/>
+          <svg width="100" height="100">
+                <image xlink:href="{% static "images/register-icon.svg" %}" src="{% static "images/register-icon.png" %}" width="100" height="100"/>
               </svg>
             <div class="cta-content">
             Registration Info
@@ -55,11 +60,38 @@
       </div>
 <!-- /call to action -->
 
-<!-- sponsors -->
+
+    <div class="row news-section">
+        <div class="container">
+            <div class=" news col-md-12 col-centered">
+              <h1>LATEST NEWS</h1>
+              <ul>
+              <div class="col-md-4 col-sm-12"><li>
+                <a href="#"><h2>Sprint Venue Selected</h2>
+                Digital Bootcamp will host the DjangoCon Sprints, September 6-7...
+                </a>
+              </li></div>
+             
+              <div class="col-md-4 col-sm-12"><li>
+                <a href="#"><h2>DjangoCast Interviews DSF President</h2>
+                Hear Russell Keith-Magee talk about DjangoCon, the DSF and the past and future of Django...
+                </a>
+                </li></div>
+              <div class="col-md-4 col-sm-12"><li>
+                <a href="#"><h2>Open Space/Meeting Reservations</h2>
+                Do you need space for a meeting or an Open Space session? You can reserve a room before the conference starts...
+                </a>
+              </li></div>
+              </ul>
+            </div>
+        </div>
+    </div>
+
       <div class="row sponsors-section">
+
        <div class="container">
 
-          <h1>SPONSORS</h1>
+          <h1>OUR SPONSORS</h1>
           </div>
 
 
@@ -195,32 +227,6 @@
  </div>
 <!-- /sponsors -->
       
-
-    <div class="row news-section">
-    <div class="container">
-        <div class=" news col-md-12 col-centered">
-          <h1>LATEST NEWS</h1>
-          <ul>
-          <div class="col-md-4 col-sm-12"><li>
-            <a href="#"><h2>Sprint Venue Selected</h2>
-            Digital Bootcamp will host the DjangoCon Sprints, September 6-7...
-            </a>
-          </li></div>
-         
-          <div class="col-md-4 col-sm-12"><li>
-            <a href="#"><h2>DjangoCast Interviews DSF President</h2>
-            Hear Russell Keith-Magee talk about DjangoCon, the DSF and the past and future of Django...
-            </a>
-            </li></div>
-          <div class="col-md-4 col-sm-12"><li>
-            <a href="#"><h2>Open Space/Meeting Reservations</h2>
-            Do you need space for a meeting or an Open Space session? You can reserve a room before the conference starts...
-            </a>
-          </li></div>
-          </ul>
-      </div>
-    </div>
-    </div>
 
       {% endblock body_outer %}
 
