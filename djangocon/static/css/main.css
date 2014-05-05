@@ -7,6 +7,24 @@
 body {
 	font-family: 'Lato', sans-serif;
 	background-color: #FEFFEC;
+	color:#007481;
+	font-size: 18px;
+
+}
+
+.page-content ul, ol {
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 26px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 
 .row {
@@ -17,6 +35,20 @@ body {
 	float: none;
 	margin: 0 auto;
 }
+
+p a {
+	color:inherit;
+	font-weight: 900;	
+}
+p a:hover {color:inherit;}
+
+.sponsor-detail a {color: inherit;}
+.sponsor-detail a:after {
+    position: absolute; /* Prevent underline of arrow */
+    padding-left:4px; /* Add a little space between text and arrow */
+    content: "\00bb"; /* Unicode hex for &raquo; */
+}
+
 
 /*a {
 	-webkit-transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
@@ -34,6 +66,11 @@ a:hover {
 
 .topspace {
 	margin-top: 120px;
+}
+
+.page-content {
+	margin-bottom: 40px;
+	margin-top: 15px;
 }
 
 .navbar-brand {
@@ -169,7 +206,6 @@ a:hover {
 	text-align: center;
 	padding: 30px 15px 30px 15px;
 	font-size: 20px;
-	color: #007481;
 }
 
 .header-message {
@@ -328,6 +364,8 @@ a:hover {
 	display: table-row;
 }
 
+.sponsor-logo-detail {padding-top: 20px;}
+
 .cta {
 	padding: 40px 20px 60px 20px;
 	opacity:1;
@@ -395,7 +433,6 @@ a:hover {
 	padding-bottom: 40px;
 	font-weight: 400;
 	font-size: 14px;
-	color:#007481;
 	text-align: center;
 }
 
@@ -485,6 +522,7 @@ th {
     content: "\00bb"; /* Unicode hex for &raquo; */
 }
 
+
 @media (max-width: 767px) {
 	.main-header {font-size:36px; height:253px;}
 	.schedule {padding: 0;}
@@ -506,6 +544,7 @@ th {
 	.cta {padding:20px 20px 30px;}
 	.cta-content {font-size: 20px;}
 	.sponsors-section h1, .news-section h1 {font-size: 26px;}
+	.small-header h1 {font-size: 30px;}
 
  }
 
