@@ -65,54 +65,28 @@
 <!-- /call to action -->
 
 <!-- sponsors -->
-      <div class="row sponsors-section">
-       <div class="container">
+<div class="row sponsors-section">
 
-          <h1>SPONSORS</h1>
-          </div>
+  <div class="container">
+    <h1>SPONSORS</h1>
+  </div>
 
+        <!-- Carousel
+================================================== -->
+        
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+               
+    <!-- Carousel items -->
+  	<div class="carousel-inner">
 
-          <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    {% sponsors as all_sponsors %}
-    <!-- Indicators -->
-      <ol class="carousel-indicators">
-    {% for sponsor in all_sponsors %}
-	  {% if forloop.counter0|divisibleby:"6" %}
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      {% endif %}
-    {% endfor %}
+              {% sponsors as all_sponsors %}
+                {# sponsors with levels, 6 per slide #}
+                {% for sponsor in all_sponsors %}
+                  {% if forloop.first or forloop.counter0|divisibleby:"6" %}
+                    <div class="container item {% if forloop.first %}active{% endif %}" style="margin: auto;">
+                  {% endif %}
 
-       <li data-target="#myCarousel" data-slide-to="1"></li>
-
-   
-      </ol>
-
-<div class="carousel-inner">
-
-      {% sponsors as all_sponsors %}
-        {# sponsors with levels, 6 per each slide #}
-
-	        <div class="item active">
-	          <div class="container">
-	            <div class="row sponsors">
-
-			    {% for sponsor in all_sponsors %}
-				    {% if forloop.first or forloop.counter0|divisibleby:"6" %}
-
-	            </div>
-	          </div>
-            </div>
-
-	        <div class="item">
-	          <div class="container">
-	            <div class="row sponsors">
-
-		    	    {% endif %}
-		    	{% if sponsor.website_logo %}
-
-		        <div class="col-md-2 col-sm-2 col-xs-6">
+             <div class="col-md-2 col-sm-2 col-xs-6">
 		          <div class="sponsor-logo">
 
 			          {% if sponsor.external_url %}
@@ -121,27 +95,35 @@
 			            <img src="{% thumbnail sponsor.website_logo "132x80" %}"alt="{{ sponsor.name }}" />
 			          {% if sponsor.external_url %}</a>{% endif %}
 
-		          </div>
+		            </div>
 		          <div class="level-label">{{ sponsor.level }}</div>            
 		        </div>
+                    {% if forloop.counter|divisibleby:"6" or forloop.last %}</div>{% endif %}
+                {% endfor %}
+  	</div>
+  	<!-- /Carousel items -->
 
-				    {% endif %}
-			    {% endfor %}
+    <!-- Indicators -->
+  	<ol class="carousel-indicators">
+    {% for sponsor in all_sponsors %}
+        {% if forloop.first or forloop.counter0|divisibleby:"6" %}
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        {% endif %}
+    {% endfor %}
+  	</ol>
+    <!-- /Indicators -->
 
-		        </div>
-		      </div>
-		    </div>
+    <!-- Carousel nav -->    
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    <!-- /Carousel nav -->
+            
+  </div><!-- /.carousel -->
 
-</div>  <!-- /end carousel inner -->     
-
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-
- </div>
+</div>
 <!-- /sponsors -->
       
-
+<!-- news -->
     <div class="row news-section">
     <div class="container">
         <div class=" news col-md-12 col-centered">
@@ -163,5 +145,6 @@
       </div>
     </div>
     </div>
+<!-- /news -->
 
 {% endblock body_outer %}
