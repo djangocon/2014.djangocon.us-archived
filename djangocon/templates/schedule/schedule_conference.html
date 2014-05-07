@@ -11,16 +11,26 @@
 
 {% block body %}
 	
-	{% include "_page_title.html" with page_title="Conference Schedule" %}
+<div class="row small-header">
+    <div class="container">
+        <h1>Conference Talks</h1>
+    </div>
+</div>
 
+<div class="container no-padding page-content">
+<div class="col-md-6 col-centered announcement-msg">
 	{% box "schedule_top" %}
+</div>
 	{% for section in sections %}
-	<div class="row">
+
 		{% for timetable in section.days %}
 			{% include "schedule/_grid.html" %}
 		{% endfor %}
-	</div>
+
 	{% endfor %}
 
+<div class="col-md-6 col-centered announcement-msg">
 	{% box "schedule_bottom" %}
+</div>
+</div>
 {% endblock body %} 
