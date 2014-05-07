@@ -72,6 +72,14 @@
     </div>
     {% endblock topbar_base %}
 
+
+<div class="row small-header">
+    <div class="container">
+        <h1>{% block page_title %}{% endblock page_title %}</h1>
+    </div>
+</div>
+
+
 <div class="{% block wrapper_class %}wrapper topspace{% endblock wrapper_class %}">
 
     {% block body_base %}
