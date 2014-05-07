@@ -3,6 +3,22 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+	padding-bottom: 230px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
+}
+#footer, .push {
+    height: 200px; /* .push must be the same height as .footer */
+}
 
 body {
 	font-family: 'Lato', sans-serif;
@@ -49,6 +65,14 @@ p a:hover {color:inherit;}
     content: "\00bb"; /* Unicode hex for &raquo; */
 }
 
+.panel {border: none;}
+
+.panel-default>.panel-heading {
+	color: #007481;
+	background-color: #f5f5f5;
+	border-color: #fff;
+	font-weight: 700;
+}
 
 /*a {
 	-webkit-transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
@@ -65,7 +89,7 @@ a:hover {
 }*/
 
 .topspace {
-	margin-top: 120px;
+	padding-top: 120px;
 }
 
 .page-content {
@@ -428,7 +452,6 @@ a:hover {
 
 #footer {
 	background: url("../images/footer-01.png") no-repeat scroll center 87% / cover  #82F2FF;
-	min-height:200px;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	font-weight: 400;
