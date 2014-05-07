@@ -1,0 +1,36 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load bootstrap_tags %}
+{% load boxes_tags %}
+{% load cache %}
+
+{% block head_title %}Conference Schedule{% endblock head_title %}
+
+{% block body_class %}full{% endblock body_class %}
+
+{% block body %}
+	
+<div class="row small-header">
+    <div class="container">
+        <h1>Conference Talks</h1>
+    </div>
+</div>
+
+<div class="container no-padding page-content">
+<div class="col-md-6 col-centered announcement-msg">
+	{% box "schedule_top" %}
+</div>
+	{% for section in sections %}
+
+		{% for timetable in section.days %}
+			{% include "schedule/_grid.html" %}
+		{% endfor %}
+
+	{% endfor %}
+
+<div class="col-md-6 col-centered announcement-msg">
+	{% box "schedule_bottom" %}
+</div>
+</div>
+{% endblock body %} 
