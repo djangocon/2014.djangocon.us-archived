@@ -101,7 +101,7 @@ a:hover {
 }*/
 
 .topspace {
-	padding-top: 120px;
+	padding-top: 30px;
 }
 
 .page-content {
@@ -167,6 +167,11 @@ a:hover {
     margin-right: 4px;
     margin-top: 14px;
     padding: 0 11px 4px;
+}
+
+.navbar-right .dropdown-menu {
+	box-shadow: none;
+	background-color: transparent;
 }
 
 .dropdown-menu {
@@ -310,19 +315,8 @@ a:hover {
 	height: auto;
 	padding-top: 70px;
 	padding-bottom: 120px;
-	
+	color: #fff
 }
-
-/*.news-section {
-	background-image: url('../images/wedge1.png'), url('../images/wedge2.png'), url('../images/bike.jpg');
-	background-position: right top, left bottom, left top;
-	background-repeat: no-repeat;
-	background-size: auto, auto, cover;
-	height: auto;
-	padding-top: 70px;
-	padding-bottom: 120px;
-	
-}*/
 
 .news ul {
 	padding-left: 0;
