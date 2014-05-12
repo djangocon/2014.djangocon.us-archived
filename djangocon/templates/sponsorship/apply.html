@@ -16,7 +16,7 @@
 
     {% box "sponsorship-apply" %}
 
-    <form method="POST" action="" class="form-horizontal">
+    <form method="POST" action="">
         {% csrf_token %}
         <legend>{% trans "Apply to Be a Sponsor" %}</legend>
         {{ form|as_bootstrap }}
