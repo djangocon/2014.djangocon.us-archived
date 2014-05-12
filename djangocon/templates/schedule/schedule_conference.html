@@ -5,18 +5,17 @@
 {% load boxes_tags %}
 {% load cache %}
 
-{% block head_title %}Conference Schedule{% endblock head_title %}
-{% block page_title %}Conference Schedule{% endblock page_title %}
+{% block page_title %}{% trans "Conference Schedule" %}{% endblock page_title %}
 
 {% block body_class %}full{% endblock body_class %}
 
 {% block body %}
 	
 
-<div class="container no-padding page-content">
 <div class="col-md-6 col-centered announcement-msg">
 	{% box "schedule_top" %}
 </div>
+<div class="container no-padding page-content">
 	{% for section in sections %}
 
 		{% for timetable in section.days %}

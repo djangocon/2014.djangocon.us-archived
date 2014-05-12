@@ -1,4 +1,4 @@
-{% extends "site_base.html" %}
+{% extends "site_base_onecolumn.html" %}
 
 {% load url from future %}
 {% load i18n %}
@@ -6,7 +6,7 @@
 {% block head_title %}{% trans "Log out" %}{% endblock %}
 
 {% block body %}
-    <div class="row">
+    <div class="container">
         <div class="col-md-5 col-centered">
             <form method="POST" action="{% url "account_logout" %}">
                
