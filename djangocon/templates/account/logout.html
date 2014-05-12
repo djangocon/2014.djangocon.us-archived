@@ -1,0 +1,19 @@
+{% extends "site_base_onecolumn.html" %}
+
+{% load url from future %}
+{% load i18n %}
+
+{% block page_title %}{% trans "Log out" %}{% endblock page_title %}
+
+{% block body %}
+    <div class="row">
+        <form method="POST" action="{% url "account_logout" %}">
+            <legend>{% trans "Log out" %}</legend>
+            <fieldset>
+                {% csrf_token %}
+                <p>{% trans "Are you sure you want to log out?" %}</p>
+                <button type="submit" class="btn btn-primary">{% trans "Log out" %}</button>
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}
