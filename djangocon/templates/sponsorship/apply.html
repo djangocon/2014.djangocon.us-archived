@@ -18,7 +18,6 @@
 
     <form method="POST" action="">
         {% csrf_token %}
-        <legend>{% trans "Apply to Be a Sponsor" %}</legend>
         {{ form|as_bootstrap }}
         <div class="form-actions">
             <input class="btn btn-primary" type="submit" value="Apply" />
