@@ -22,9 +22,9 @@
         <h1 class="padded-multi-line">We're returning to Portland!<br>
         Aug. 30 - Sept. 5, 2014</h1>
         </div>
-        </div> 
-<!-- /headline -->         
-     
+        </div>
+<!-- /headline -->
+
 <!-- call to action -->
       <div class="row cta-section">
       <div class="container">
@@ -39,10 +39,10 @@
             </div>
             </a>
         </div>
-        
+
 
         <div class="col-xs-12 col-sm-4 col-md-4 cta">
-        <a href="#">
+        <a href="{% url 'sponsor_apply' %}">
           <svg width="100" height="100">
                 <image xlink:href="{% static "images/sponsor-icon.svg" %}" src="{% static "images/sponsor-icon.png" %}" width="100" height="100"/>
               </svg>
@@ -51,10 +51,10 @@
             </div>
             </a>
         </div>
-       
- 
+
+
         <div class="col-xs-12 col-sm-4 col-md-4 cta">
-        <a href="#">
+        <a href="{% url 'cms_page' 'registration_info/' %}">
           <svg width="100" height="100">
                 <image xlink:href="{% static "images/register-icon.svg" %}" src="{% static "images/register-icon.png" %}" width="100" height="100"/>
               </svg>
@@ -66,7 +66,7 @@
       </div>
       </div>
 <!-- /call to action -->
-      
+
 <!-- news -->
     <div class="row news-section">
     <div class="container">
@@ -82,7 +82,7 @@
   	            </a>
 	            </li>
             </div>
-         
+
           {% empty %}
             <div class="col-md-4 col-md-offset-4 col-sm-12">
               <li>
@@ -90,7 +90,7 @@
               </li>
             </div>
           {% endfor %}
-          
+
           </ul>
       </div>
     </div>
@@ -106,9 +106,9 @@
 
         <!-- Carousel
 ================================================== -->
-        
+
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-               
+
     <!-- Carousel items -->
   	<div class="carousel-inner">
 
@@ -129,7 +129,7 @@
 			          {% if sponsor.external_url %}</a>{% endif %}
 
 		            </div>
-		          <div class="level-label">{{ sponsor.level }}</div>            
+		          <div class="level-label">{{ sponsor.level }}</div>
 		        </div>
                     {% if forloop.counter|divisibleby:"6" or forloop.last %}</div>{% endif %}
                 {% endfor %}
@@ -146,11 +146,11 @@
   	</ol>
     <!-- /Indicators -->
 
-    <!-- Carousel nav -->    
+    <!-- Carousel nav -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
     <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     <!-- /Carousel nav -->
-            
+
   </div><!-- /.carousel -->
 
 </div>
