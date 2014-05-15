@@ -3,7 +3,7 @@
 {% load bootstrap_tags %}
 {% load staticfiles %}
 
-{% block head_title %}Conference Schedule Edit{% endblock head_title %}
+{% block page_title %}Conference Schedule Edit{% endblock page_title %}
 
 {% block extra_style %}
   <link rel="stylesheet" href="{% static "chosen/chosen.min.css" %}" />
@@ -39,7 +39,7 @@
 
 {% block body %}
   
-
+<div class="container no-padding page-content">
   <div class="row">
   {% for timetable in days %}
     {% include "schedule/_edit_grid.html" %}
@@ -52,4 +52,5 @@
       <input type="submit" id="delete" name="delete" value="Delete Schedule" />
   </form>
   <div class="modal-markItUp modal fade" id="slotEditModal"></div>
+</div>
 {% endblock body %}
