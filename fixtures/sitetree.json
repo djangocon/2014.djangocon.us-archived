@@ -8,6 +8,14 @@
     }
 },
 {
+    "pk": 2, 
+    "model": "sitetree.tree", 
+    "fields": {
+        "alias": "main_nav", 
+        "title": "Main Nav"
+    }
+},
+{
     "pk": 1, 
     "model": "sitetree.treeitem", 
     "fields": {
@@ -80,6 +88,30 @@
     }
 },
 {
+    "pk": 4, 
+    "model": "sitetree.treeitem", 
+    "fields": {
+        "parent": null, 
+        "access_restricted": false, 
+        "access_permissions": [], 
+        "description": "", 
+        "insitetree": true, 
+        "hint": "", 
+        "url": "home", 
+        "inbreadcrumbs": true, 
+        "title": "Home", 
+        "tree": 1, 
+        "access_perm_type": 1, 
+        "alias": null, 
+        "sort_order": 1, 
+        "inmenu": true, 
+        "access_loggedin": false, 
+        "hidden": false, 
+        "urlaspattern": true, 
+        "access_guest": false
+    }
+},
+{
     "pk": 5, 
     "model": "sitetree.treeitem", 
     "fields": {
@@ -89,7 +121,7 @@
         "description": "", 
         "insitetree": true, 
         "hint": "", 
-        "url": "cms_page \"sponsor_apply/\"", 
+        "url": "sponsor_apply", 
         "inbreadcrumbs": true, 
         "title": "Become A Sponsor", 
         "tree": 1, 
@@ -209,7 +241,7 @@
         "description": "", 
         "insitetree": true, 
         "hint": "", 
-        "url": "cms_page \"tutorials/\"", 
+        "url": "schedule_list \"tutorials\"", 
         "inbreadcrumbs": true, 
         "title": "Tutorials", 
         "tree": 1, 

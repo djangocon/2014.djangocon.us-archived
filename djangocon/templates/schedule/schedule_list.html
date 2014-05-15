@@ -20,8 +20,8 @@
 {% endblock %}
 
 {% block body %}
-    {% with "Accepted "|add:schedule.section.name as page_title %}
-        {% include "_page_title.html" %}
+    {% with "Accepted "|add:schedule.section.name as title %}
+    {% block page_title %}{{ title}}{% endblock page_title %}
     {% endwith %}
 
     {% cache 600 "schedule-list" schedule.section.name %}

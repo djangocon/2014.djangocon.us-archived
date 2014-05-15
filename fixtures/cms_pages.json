@@ -14,20 +14,6 @@
     }
 },
 {
-    "pk": 2, 
-    "model": "cms.page", 
-    "fields": {
-        "body": "### Tutorial 1\r\nA great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.\r\n\r\n### Tutorial 2\r\nA great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.", 
-        "status": 2, 
-        "updated": "2014-05-14T12:39:26.982", 
-        "created": "2014-05-12T13:15:30.049", 
-        "_body_rendered": "<h3>Tutorial 1</h3>\n<p>A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.</p>\n<h3>Tutorial 2</h3>\n<p>A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.A great tutorial about amazing stuff.</p>", 
-        "title": "Tutorials", 
-        "publish_date": "2014-05-12T13:15:30.049", 
-        "path": "tutorials/"
-    }
-},
-{
     "pk": 3, 
     "model": "cms.page", 
     "fields": {
