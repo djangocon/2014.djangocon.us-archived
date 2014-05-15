@@ -4,7 +4,7 @@
 {% load cache %}
 {% load sitetree %}
 
-{% block head_title %}Accepted {{ schedule.section.name }}{% endblock %}
+{% block page_title %}Accepted {{ schedule.section.name }}{% endblock %}
 
 {% block extra_head %}
     <style>
@@ -20,8 +20,9 @@
 {% endblock %}
 
 {% block body %}
+<div class="container no-padding page-content">
     {% with "Accepted "|add:schedule.section.name as title %}
-    {% block page_title %}{{ title}}{% endblock page_title %}
+
     {% endwith %}
 
     {% cache 600 "schedule-list" schedule.section.name %}
@@ -43,4 +44,5 @@
                 </div>
         {% endfor %}
     {% endcache %}
+</div>
 {% endblock %}
