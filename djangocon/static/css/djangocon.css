@@ -15,10 +15,7 @@
 
 .callforpapers {text-align: left;}
 
-ul {
-	padding-left: 0;
-}
-li {list-style-type: none;
+li {
 	color:#363751;}
 
 .location {
@@ -77,6 +74,7 @@ hr {
 
 @media (max-width: 767px) {
 	h1 {font-size: 46px;}
+	h2 {font-size: 26px;}
 	.logo {margin-bottom:15px;}
 	.main-msg {padding: 0;}
 }
