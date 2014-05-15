@@ -1,25 +1,43 @@
-html {
-	background: url("../images/skyline.jpg") no-repeat center 10% fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+.jumbotron {
+	background: url("../images/portlandwater.jpg") no-repeat center 20% / cover; 
+	background-color: #fff;
+	height:300px;
+	padding-top:60px;
+	margin-bottom: 0;
+	color:#63da81;
+	text-shadow: 3px 3px 12px #000;
 		}
 
+.main-msg {
+	padding: 20px;
+
+}
+
+.callforpapers {text-align: left;}
+
+ul {
+	padding-left: 0;
+}
+li {list-style-type: none;
+	color:#363751;}
+
+.location {
+	background-color: #363751;
+	padding:20px 0 30px 0;}
 
 body {
 	font-style: normal;
 	font-weight: 400;
 	font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
-	background-color: transparent;
-	color: #63da81;
+	color: #fff;
+	background-color: #4CBA68;
 	text-align: center;
-	border: 15px solid #fff;
+	font-size:16px;
 	}
 
 h1 {font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
  	font-weight: 700;
- 	font-size: 72px;
+ 	font-size: 70px;
 }
 
 h2 {
@@ -28,7 +46,8 @@ h2 {
 }
 
 h3 {font-family: 'Montserrat', "Helvetica Neue", Helvetica, sans-serif;
-	font-weight: 700;}
+	font-weight: 700;
+	margin-bottom: 20px;}
 	
 
 .col-centered {
@@ -57,6 +76,7 @@ hr {
 .bottom-buffer { margin-bottom:50px; }
 
 @media (max-width: 767px) {
-	h1 {font-size: 48px;}
+	h1 {font-size: 46px;}
 	.logo {margin-bottom:15px;}
+	.main-msg {padding: 0;}
 }
