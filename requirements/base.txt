@@ -15,6 +15,7 @@ South==0.8.4
 git+git://github.com/pyohio/symposion.git@6b9fb3a49dedc1ac9a603e544a95ec1609d46204#egg=symposion
 biblion==2.2.3
 django-comps==0.3.0
+django-contact-form==1.0
 
 # Other Python packages
 gondor==1.2.5
