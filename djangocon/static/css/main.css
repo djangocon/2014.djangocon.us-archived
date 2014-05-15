@@ -3,6 +3,24 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+	padding-bottom: 230px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
+}
+#footer, .push {
+    height: 200px; /* .push must be the same height as .footer */
+}
+
+.home div.small-header {display:none;}
 
 body {
 	font-family: 'Lato', sans-serif;
@@ -10,6 +28,17 @@ body {
 	color:#007481;
 	font-size: 18px;
 
+}
+
+.btn-primary {
+	background-color: #007481;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: #007481;
+	opacity: 0.8;
+	border: none;
 }
 
 .page-content ul, ol {
@@ -49,6 +78,24 @@ p a:hover {color:inherit;}
     content: "\00bb"; /* Unicode hex for &raquo; */
 }
 
+.panel {border: none;}
+
+.panel-default>.panel-heading {
+	color: #007481;
+	background-color: #f5f5f5;
+	border-color: #fff;
+	font-weight: 700;
+}
+
+legend {color:#007481;}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background-color: transparent;
+}
 
 /*a {
 	-webkit-transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
@@ -65,7 +112,7 @@ a:hover {
 }*/
 
 .topspace {
-	margin-top: 120px;
+	padding-top: 30px;
 }
 
 .page-content {
@@ -131,6 +178,11 @@ a:hover {
     margin-right: 4px;
     margin-top: 14px;
     padding: 0 11px 4px;
+}
+
+.navbar-right .dropdown-menu {
+	box-shadow: none;
+	background-color: transparent;
 }
 
 .dropdown-menu {
@@ -274,19 +326,8 @@ a:hover {
 	height: auto;
 	padding-top: 70px;
 	padding-bottom: 120px;
-	
+	color: #fff
 }
-
-/*.news-section {
-	background-image: url('../images/wedge1.png'), url('../images/wedge2.png'), url('../images/bike.jpg');
-	background-position: right top, left bottom, left top;
-	background-repeat: no-repeat;
-	background-size: auto, auto, cover;
-	height: auto;
-	padding-top: 70px;
-	padding-bottom: 120px;
-	
-}*/
 
 .news ul {
 	padding-left: 0;
@@ -428,7 +469,6 @@ a:hover {
 
 #footer {
 	background: url("../images/footer-01.png") no-repeat scroll center 87% / cover  #82F2FF;
-	min-height:200px;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	font-weight: 400;
@@ -460,9 +500,9 @@ a:hover {
 }
 
 th {
-    background-color: #FF4136;
+    background-color: #007481;
     color: #FFFFFF;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 700;
     width: 100%;
 }
