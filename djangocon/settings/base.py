@@ -26,14 +26,15 @@ INTERNAL_IPS = [
 ]
 
 ADMINS = [
-    # ("Your Name", "your_email@domain.com"),
+    ("DjangoCon", "djangocon2014@theopenbastion.com"),
+    ("DjangoCon Caktus", "djangocon2014-team@caktusgroup.com"),
 ]
 
 MANAGERS = ADMINS
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2", # Add "postgresql_psycopg2", "postgresql", "mysql", "sqlite3" or "oracle".
+        "ENGINE": "django.db.backends.postgresql_psycopg2",  # Add "postgresql_psycopg2", "postgresql", "mysql", "sqlite3" or "oracle".
         "NAME": "djangocon2014",                       # Or path to database file if using sqlite3.
         "USER": "",                             # Not used with sqlite3.
         "PASSWORD": "",                         # Not used with sqlite3.
@@ -225,7 +226,7 @@ PROPOSAL_FORMS = {
 
 SESSION_COOKIE_NAME = "DJANGOCON2014"
 
-THEME_CONTACT_EMAIL = 'support@djangocon.org'
+THEME_CONTACT_EMAIL = 'djangocon2014@theopenbastion.com'
 
 SOUTH_MIGRATION_MODULES = {
     'proposals': 'djangocon.proposals.migrations',
