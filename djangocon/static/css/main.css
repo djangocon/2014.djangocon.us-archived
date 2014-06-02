@@ -27,6 +27,7 @@ body {
 	background-color: #FEFFEC;
 	color:#007481;
 	font-size: 18px;
+	line-height: 1.6;
 
 }
 
@@ -43,6 +44,10 @@ body {
 
 .page-content ul, ol {
 	font-weight: 300;
+}
+
+h4 {
+	font-weight: 900;
 }
 
 h3 {
@@ -64,6 +69,8 @@ h2 {
 	float: none;
 	margin: 0 auto;
 }
+
+p {margin-bottom: 22px;}
 
 p a {
 	color:inherit;
