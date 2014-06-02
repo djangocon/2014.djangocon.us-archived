@@ -2,9 +2,8 @@
 {% load staticfiles %}
 {% load markitup_tags %}
 {% load sitetree %}
-<html lang="{{ LANGUAGE_CODE }}">
 <head>
-<link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,900' rel='stylesheet' type='text/css'>
+<html lang="{{ LANGUAGE_CODE }}">
   <meta charset="UTF-8">
   <title>{% block head_title_base %}{% if SITE_NAME %}{{ SITE_NAME }} | {% endif %}{% block head_title %}{% endblock head_title %}{% endblock head_title_base %}</title>
   {% block viewport %}
@@ -13,10 +12,8 @@
 
   {% block style_base %}
   <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,900' rel='stylesheet' type='text/css'>
   {% markitup_css %}
-
-
   <link href="{% static 'css/main.css' %}" rel="stylesheet">
   {% block extra_style %}{% endblock extra_style %}
   {% endblock style_base %}
