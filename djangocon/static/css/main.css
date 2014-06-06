@@ -3,17 +3,51 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+	padding-bottom: 230px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
+}
+#footer, .push {
+    height: 200px; /* .push must be the same height as .footer */
+}
+
+.home div.small-header {display:none;}
 
 body {
 	font-family: 'Lato', sans-serif;
 	background-color: #FEFFEC;
 	color:#007481;
 	font-size: 18px;
+	line-height: 1.6;
 
+}
+
+.btn-primary {
+	background-color: #007481;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: #007481;
+	opacity: 0.8;
+	border: none;
 }
 
 .page-content ul, ol {
 	font-weight: 300;
+}
+
+h4 {
+	font-weight: 900;
 }
 
 h3 {
@@ -36,9 +70,11 @@ h2 {
 	margin: 0 auto;
 }
 
+p {margin-bottom: 22px;}
+
 p a {
 	color:inherit;
-	font-weight: 900;	
+	font-weight: 900;
 }
 p a:hover {color:inherit;}
 
@@ -49,6 +85,24 @@ p a:hover {color:inherit;}
     content: "\00bb"; /* Unicode hex for &raquo; */
 }
 
+.panel {border: none;}
+
+.panel-default>.panel-heading {
+	color: #007481;
+	background-color: #f5f5f5;
+	border-color: #fff;
+	font-weight: 700;
+}
+
+legend {color:#007481;}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background-color: transparent;
+}
 
 /*a {
 	-webkit-transition: color .25s linear, background-color .25s ease-in-out, border-color .25s ease-in-out;
@@ -65,7 +119,7 @@ a:hover {
 }*/
 
 .topspace {
-	margin-top: 120px;
+	padding-top: 30px;
 }
 
 .page-content {
@@ -110,7 +164,7 @@ a:hover {
 
 .navbar-default .navbar-nav li a:hover {
 	color:#24B1C1;
-	
+
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
@@ -131,6 +185,11 @@ a:hover {
     margin-right: 4px;
     margin-top: 14px;
     padding: 0 11px 4px;
+}
+
+.navbar-right .dropdown-menu {
+	box-shadow: none;
+	background-color: transparent;
 }
 
 .dropdown-menu {
@@ -274,19 +333,8 @@ a:hover {
 	height: auto;
 	padding-top: 70px;
 	padding-bottom: 120px;
-	
+	color: #fff
 }
-
-/*.news-section {
-	background-image: url('../images/wedge1.png'), url('../images/wedge2.png'), url('../images/bike.jpg');
-	background-position: right top, left bottom, left top;
-	background-repeat: no-repeat;
-	background-size: auto, auto, cover;
-	height: auto;
-	padding-top: 70px;
-	padding-bottom: 120px;
-	
-}*/
 
 .news ul {
 	padding-left: 0;
@@ -336,11 +384,11 @@ a:hover {
     vertical-align: middle;
     width: 200px;
     height: 200px;
-}	
+}
 
-.sponsor-logo img { 
-	max-width: 150px; 
-	max-height: 150px; 
+.sponsor-logo img {
+	max-width: 150px;
+	max-height: 150px;
 	margin: 0 auto;
 	padding: 20px;
 }
@@ -419,7 +467,7 @@ a:hover {
 }
 
 .carousel-indicators .active {
-	background-color: #007481; 
+	background-color: #007481;
 }
 
 .carousel-indicators li {
@@ -428,7 +476,6 @@ a:hover {
 
 #footer {
 	background: url("../images/footer-01.png") no-repeat scroll center 87% / cover  #82F2FF;
-	min-height:200px;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	font-weight: 400;
@@ -450,7 +497,7 @@ a:hover {
     font-size: 20px;
     table-layout: fixed;
     width: 100%;
-    font-weight:700; 
+    font-weight:700;
     margin-top: 20px;
 }
 
@@ -460,9 +507,9 @@ a:hover {
 }
 
 th {
-    background-color: #FF4136;
+    background-color: #007481;
     color: #FFFFFF;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 700;
     width: 100%;
 }
@@ -573,17 +620,17 @@ th {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	
+
  }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-	
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1400px) {
-	
+
 }
 
 
@@ -591,8 +638,35 @@ th {
 
 
 
+/* MarkItUp content editor */
+.modal-markItUp,
+.modal-markItUp h3 {
+    color: black;
+}
+.modal-markItUp .modal-dialog {
+    width: 730px;
+}
+.modal-markItUp .modal-footer {
+    margin-top: 0px;
+}
+.markItUpHeader ul li.markItUpButton {
+    padding-right: 6px;
+}
+textarea.markItUpEditor {
+    margin-top: 5px;
+}
 
-
+#markItUpId_body {
+    width: inherit;
+}
+#markItUpId_body textarea {
+    width: 100%;
+}
+@media (min-width: 600px) {
+    #markItUpId_body textarea {
+        height: 400px;
+    }
+}
 
 
 

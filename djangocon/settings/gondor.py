@@ -80,7 +80,7 @@ LOGGING = {
     }
 }
 
-DEFAULT_FROM_EMAIL = "DjangoCon 2014 <no-reply@djangocon.org>"
+DEFAULT_FROM_EMAIL = "DjangoCon 2014 <djangocon2014@theopenbastion.com>"
 
 if "GONDOR_SENDGRID_USER" in os.environ:
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
