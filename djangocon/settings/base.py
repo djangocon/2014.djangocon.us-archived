@@ -159,7 +159,6 @@ INSTALLED_APPS = [
     "account",
     "model_utils",
     "biblion",
-    "comps",
 
     # symposion
     "symposion",
