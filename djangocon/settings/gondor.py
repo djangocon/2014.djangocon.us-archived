@@ -43,6 +43,10 @@ if "GONDOR_REDIS_URL" in os.environ:
         },
     }
 
+# Set SSL Header on environments that expect it.
+if "GONDOR_HTTPS" in os.environ:
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
 SITE_ID = int(os.environ.get("SITE_ID", "1"))
 
 MEDIA_ROOT = os.path.join(os.environ["GONDOR_DATA_DIR"], "site_media", "media")
