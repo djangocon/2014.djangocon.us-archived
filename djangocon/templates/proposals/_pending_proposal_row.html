@@ -2,7 +2,7 @@
 
 <tr>
     <td>
-        <a href="{% url proposal_detail proposal.pk %}">{{ proposal.title }}</a>
+        <a href="{% url 'proposal_detail' proposal.pk %}">{{ proposal.title }}</a>
     </td>
 
     <td>{{ proposal.kind.name }}</td>
