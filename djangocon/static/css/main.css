@@ -27,6 +27,7 @@ body {
 	background-color: #FEFFEC;
 	color:#007481;
 	font-size: 18px;
+	line-height: 1.6;
 
 }
 
@@ -43,6 +44,10 @@ body {
 
 .page-content ul, ol {
 	font-weight: 300;
+}
+
+h4 {
+	font-weight: 900;
 }
 
 h3 {
@@ -65,9 +70,11 @@ h2 {
 	margin: 0 auto;
 }
 
+p {margin-bottom: 22px;}
+
 p a {
 	color:inherit;
-	font-weight: 900;	
+	font-weight: 900;
 }
 p a:hover {color:inherit;}
 
@@ -157,7 +164,7 @@ a:hover {
 
 .navbar-default .navbar-nav li a:hover {
 	color:#24B1C1;
-	
+
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
@@ -377,11 +384,11 @@ a:hover {
     vertical-align: middle;
     width: 200px;
     height: 200px;
-}	
+}
 
-.sponsor-logo img { 
-	max-width: 150px; 
-	max-height: 150px; 
+.sponsor-logo img {
+	max-width: 150px;
+	max-height: 150px;
 	margin: 0 auto;
 	padding: 20px;
 }
@@ -460,7 +467,7 @@ a:hover {
 }
 
 .carousel-indicators .active {
-	background-color: #007481; 
+	background-color: #007481;
 }
 
 .carousel-indicators li {
@@ -490,7 +497,7 @@ a:hover {
     font-size: 20px;
     table-layout: fixed;
     width: 100%;
-    font-weight:700; 
+    font-weight:700;
     margin-top: 20px;
 }
 
@@ -613,17 +620,17 @@ th {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	
+
  }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-	
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1400px) {
-	
+
 }
 
 
@@ -631,8 +638,35 @@ th {
 
 
 
+/* MarkItUp content editor */
+.modal-markItUp,
+.modal-markItUp h3 {
+    color: black;
+}
+.modal-markItUp .modal-dialog {
+    width: 730px;
+}
+.modal-markItUp .modal-footer {
+    margin-top: 0px;
+}
+.markItUpHeader ul li.markItUpButton {
+    padding-right: 6px;
+}
+textarea.markItUpEditor {
+    margin-top: 5px;
+}
 
-
+#markItUpId_body {
+    width: inherit;
+}
+#markItUpId_body textarea {
+    width: 100%;
+}
+@media (min-width: 600px) {
+    #markItUpId_body textarea {
+        height: 400px;
+    }
+}
 
 
 

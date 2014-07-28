@@ -3,8 +3,8 @@
 {% load i18n %}
 {% load cache %}
 {% load sitetree %}
-
-{% block head_title %}Accepted {{ schedule.section.name }}{% endblock %}
+{% load boxes_tags %}
+{% block page_title %}{{ schedule.section.name }}{% endblock %}
 
 {% block extra_head %}
     <style>
@@ -20,8 +20,11 @@
 {% endblock %}
 
 {% block body %}
-    {% with "Accepted "|add:schedule.section.name as page_title %}
-        {% include "_page_title.html" %}
+<div class="container no-padding page-content">
+    {% with ""|add:schedule.section.name as title %}
+    <div class="col-md-6 col-centered announcement-msg">
+        {% box "schedule_"|add:title|lower  %}
+    </div>
     {% endwith %}
 
     {% cache 600 "schedule-list" schedule.section.name %}
@@ -43,4 +46,5 @@
                 </div>
         {% endfor %}
     {% endcache %}
+</div>
 {% endblock %}

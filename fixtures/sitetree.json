@@ -49,7 +49,7 @@
         "description": "", 
         "insitetree": true, 
         "hint": "", 
-        "url": "cms_page \"venue/\"", 
+        "url": "venue/", 
         "inbreadcrumbs": true, 
         "title": "Venue", 
         "tree": 1, 
@@ -84,6 +84,30 @@
         "access_loggedin": false, 
         "hidden": false, 
         "urlaspattern": false, 
+        "access_guest": false
+    }
+},
+{
+    "pk": 4, 
+    "model": "sitetree.treeitem", 
+    "fields": {
+        "parent": null, 
+        "access_restricted": false, 
+        "access_permissions": [], 
+        "description": "", 
+        "insitetree": true, 
+        "hint": "", 
+        "url": "home", 
+        "inbreadcrumbs": true, 
+        "title": "Home", 
+        "tree": 1, 
+        "access_perm_type": 1, 
+        "alias": null, 
+        "sort_order": 1, 
+        "inmenu": true, 
+        "access_loggedin": false, 
+        "hidden": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -145,7 +169,7 @@
         "description": "", 
         "insitetree": true, 
         "hint": "", 
-        "url": "cms_page \"schedule/\"", 
+        "url": "#", 
         "inbreadcrumbs": true, 
         "title": "Schedule", 
         "tree": 1, 
@@ -193,9 +217,9 @@
         "description": "", 
         "insitetree": true, 
         "hint": "", 
-        "url": "cms_page \"talks/\"", 
+        "url": "cms_page \"schedule/\"", 
         "inbreadcrumbs": true, 
-        "title": "Talks", 
+        "title": "Conference Schedule", 
         "tree": 1, 
         "access_perm_type": 1, 
         "alias": null, 
@@ -203,7 +227,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -217,7 +241,7 @@
         "description": "", 
         "insitetree": true, 
         "hint": "", 
-        "url": "cms_page \"tutorials/\"", 
+        "url": "schedule_list \"tutorials\"", 
         "inbreadcrumbs": true, 
         "title": "Tutorials", 
         "tree": 1, 
@@ -227,7 +251,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -251,7 +275,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -275,7 +299,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -299,7 +323,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -323,7 +347,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -347,7 +371,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -371,7 +395,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -385,7 +409,7 @@
         "description": "", 
         "insitetree": true, 
         "hint": "", 
-        "url": "cms_page \"contact_us/\"", 
+        "url": "contact_us/", 
         "inbreadcrumbs": true, 
         "title": "Contact Us", 
         "tree": 1, 
@@ -395,7 +419,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -419,7 +443,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -443,7 +467,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -467,7 +491,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 },
@@ -491,7 +515,7 @@
         "inmenu": true, 
         "access_loggedin": false, 
         "hidden": false, 
-        "urlaspattern": false, 
+        "urlaspattern": true, 
         "access_guest": false
     }
 }

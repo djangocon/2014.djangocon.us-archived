@@ -43,6 +43,10 @@ if "GONDOR_REDIS_URL" in os.environ:
         },
     }
 
+# Set SSL Header on environments that expect it.
+if "GONDOR_HTTPS" in os.environ:
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
 SITE_ID = int(os.environ.get("SITE_ID", "1"))
 
 MEDIA_ROOT = os.path.join(os.environ["GONDOR_DATA_DIR"], "site_media", "media")
@@ -80,7 +84,7 @@ LOGGING = {
     }
 }
 
-DEFAULT_FROM_EMAIL = "DjangoCon 2014 <no-reply@djangocon.org>"
+DEFAULT_FROM_EMAIL = "DjangoCon 2014 <djangocon2014@theopenbastion.com>"
 
 if "GONDOR_SENDGRID_USER" in os.environ:
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"

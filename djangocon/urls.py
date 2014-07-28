@@ -30,7 +30,7 @@ urlpatterns += patterns("",
     url(r"^account/signup/$", symposion.views.SignupView.as_view(), name="account_signup"),
     url(r"^account/login/$", symposion.views.LoginView.as_view(), name="account_login"),
     url(r"^account/", include("account.urls")),
-
+    url(r'^contact/', include('contact_form.urls')),
     url(r"^schedule/json/$", djangocon.views.schedule_json, name="schedule_json"),
 
     url(r"^blog/", include("biblion.urls")),

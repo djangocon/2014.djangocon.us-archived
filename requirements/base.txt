@@ -12,9 +12,10 @@ metron==0.1 # 0.2.dev3
 pinax-utils==1.0b1.dev3
 South==0.8.4
 # pin the version based on the version used for PyOhio 2014
-git+git://github.com/pyohio/symposion.git@6b9fb3a49dedc1ac9a603e544a95ec1609d46204#egg=symposion
+git+git://github.com/pyohio/symposion.git@5b853f9300827ea163fa04a8ed21b48e2175e8d0#egg=symposion
 biblion==2.2.3
 django-comps==0.3.0
+django-contact-form==1.0
 
 # Other Python packages
 gondor==1.2.5
