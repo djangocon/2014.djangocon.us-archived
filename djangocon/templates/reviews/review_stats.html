@@ -1,15 +1,15 @@
 {% extends "reviews/base.html" %}
 
-{% block body %}
+{% block reviews %}
     <h1>Voting Status ({{ section_slug }})</h1>
-    
+
     {% if key %}
         <div class="breadcrumbs">
             <a href="{% url 'review_status' section_slug "positive" %}">Positive</a> |
             <a href="{% url 'review_status' section_slug "negative" %}">Negative</a> |
             <a href="{% url 'review_status' section_slug "indifferent" %}">Indifferent</a> |
             <a href="{% url 'review_status' section_slug "controversial" %}">Controversial</a>  |
-            <a href="{% url 'review_status' section_slug "too_few" %}">Too Few</a> 
+            <a href="{% url 'review_status' section_slug "too_few" %}">Too Few</a>
         </div>
 
         <div>
@@ -39,7 +39,7 @@
         </div>
     {% else %}
         <p>Reviews are placed into one of five buckets depending on the state of their votes:</p>
-        
+
         <dl>
             <dt>
                 <a href="{% url 'review_status' section_slug "positive" %}">Positive</a>
