@@ -18,7 +18,7 @@
                         {% for slot in slot_group.list %}
                             {% if slot.content %}
                                 <p class="start-time"><a href="{% url 'schedule_presentation_detail' slot.content.pk %}">{{ slot.content.title }}</a></p>
-                                <p class="speaker">{{ slot.content.speaker }}</p>
+                                <p class="speaker">{{ slot.content.speakers|join:", " }}</p>
                             {% else %}
                                 {% if slot.content_override.raw %}
                                     {{ slot.content_override.rendered|safe }}
