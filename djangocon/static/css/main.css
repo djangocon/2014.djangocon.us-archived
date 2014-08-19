@@ -569,6 +569,22 @@ th {
     content: "\00bb"; /* Unicode hex for &raquo; */
 }
 
+/* Schedule / Presentation / Audience Level */
+.dl-horizontal dt {
+	width: auto;
+	overflow: hidden;
+	clear: left;
+	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.dl-horizontal dd {
+	margin-left: 0;
+	clear: both;
+}
+
+
+
 
 @media (max-width: 767px) {
 	.main-header {font-size:36px; height:253px;}
