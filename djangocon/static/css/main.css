@@ -290,6 +290,14 @@ a:hover {
 	padding:30px 0;
 }
 
+.duckling-widget-section {
+	background-color: white;
+	background-image: url('../images/texture3.png');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	padding:30px 0;
+}
+
 .sponsors-section {
 	background-color: #fff;
 	padding-top: 70px;
