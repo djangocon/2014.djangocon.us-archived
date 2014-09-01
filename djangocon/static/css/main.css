@@ -313,7 +313,7 @@ a:hover {
 
 .duckling-logo { 
 	min-width: 100px;
-	max-width: 160px;
+	max-width: 140px;
 	margin-right: 10px;
 	float: left;
 }
@@ -332,6 +332,11 @@ a:hover {
 	-webkit-transform: translate(-50%,0);
 	left: 50%;
 	background-color: #febc11;
+}
+@media (max-width: 768px) {
+	.duckling-banner-inner {
+		width: 280px;
+	}
 }
 
 .tagline > p {
