@@ -298,6 +298,56 @@ a:hover {
 	padding:30px 0;
 }
 
+.duckling-banner {
+	position: relative;
+	top: -30px;
+	width: 100%;
+	height: 60px;
+	background-color: #febc11;
+}
+@media (max-width: 768px){
+	.duckling-banner { 
+		height: 76px;
+	}
+}
+
+.duckling-logo { 
+	min-width: 100px;
+	max-width: 160px;
+	margin-right: 10px;
+	float: left;
+}
+@media (max-width: 768px){
+	.duckling-logo { 
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+.duckling-banner-inner {
+	position: absolute;
+	width: 380px;
+	left: 0;
+	padding: 10px;
+	-webkit-transform: translate(-50%,0);
+	left: 50%;
+	background-color: #febc11;
+}
+
+.tagline > p {
+	font-weight: 700;
+	color: white;
+	font-size: 14px;
+	margin: 9px 0 8px -30px;
+}
+@media (max-width: 768px){
+	.tagline > p {
+		text-align: center;
+		margin: 0;
+		clear: left;
+	}
+}
+
 .sponsors-section {
 	background-color: #fff;
 	padding-top: 70px;
