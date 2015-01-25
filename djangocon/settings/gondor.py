@@ -8,8 +8,7 @@ DEBUG = {"dev": True}.get(os.environ["GONDOR_INSTANCE"], False)
 ALLOWED_HOSTS = [
     'tk551.gondor.co',
     'fi290.gondor.co',
-    'djangocon.us',
-    'www.djangocon.us'
+    '2014.djangocon.us',
 ]
 
 if "GONDOR_DATABASE_URL" in os.environ:
