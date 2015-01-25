@@ -26,8 +26,7 @@ INTERNAL_IPS = [
 ]
 
 ADMINS = [
-    ("DjangoCon", "djangocon2014@theopenbastion.com"),
-    ("DjangoCon Caktus", "djangocon2014-team@caktusgroup.com"),
+    ('DjangoCon Web Team', 'webteam@djangocon.us'),
 ]
 
 MANAGERS = ADMINS
