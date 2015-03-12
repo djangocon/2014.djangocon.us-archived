@@ -226,7 +226,7 @@ PROPOSAL_FORMS = {
 SESSION_COOKIE_NAME = "DJANGOCON2014"
 
 THEME_CONTACT_EMAIL = 'djangocon2014@theopenbastion.com'
-SERVER_EMAIL = 'no-reply@theopenbastion.com'
+SERVER_EMAIL = 'no-reply@djangocon.us'
 
 SOUTH_MIGRATION_MODULES = {
     'proposals': 'djangocon.proposals.migrations',
