@@ -9,6 +9,7 @@ ALLOWED_HOSTS = [
     'tk551.gondor.co',
     'fi290.gondor.co',
     '2014.djangocon.us',
+    'www.djangocon.us',
 ]
 
 if "GONDOR_DATABASE_URL" in os.environ:
